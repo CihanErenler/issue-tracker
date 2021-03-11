@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-f">
+        <h1>Issue Tracker</h1>
+        <form id="issue-form">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input
+              type="text"
+              id="description"
+              placeholder="Describe the issue"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Severity</label>
+            <select id="severity">
+              <option value="select">Select</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="responsibles">Assigned To</label>
+            <input
+              type="text"
+              id="responsibles"
+              placeholder="Enter responsibles by comma"
+            />
+          </div>
+          <button class="btn" id="add" type="submit">Add</button>
+        </form>
+      </div>
+
+      <!-- <div class="issue card-f">
+        <span class="issue-id">Issue ID: 15254125414254</span>
+        <div class="status">Open</div>
+        <p class="issue-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          aliquam.
+        </p>
+        <div class="severity-info"><i class="far fa-clock"></i>Medium</div>
+        <div class="responsible-info">
+          <i class="far fa-user-circle"></i>
+          <span class="responsible-person"> Cihan Erenler </span>
+          <span class="responsible-person"> Kayahan Kaya </span>
+        </div>
+        <div>
+          <a href="#" class="btn close">Close</a>
+          <a href="#" class="btn delete">Delete</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div id="alert" class="success fadein">
+      Naber sikikler
+    </div> -->
+
+    <script src="issue.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
