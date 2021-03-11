@@ -52,6 +52,7 @@ container.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("delete")) {
+    ui.showAlert("success", "Successfully deleted");
     storage.deleteFromStorage(id);
     e.target.parentElement.parentElement.remove();
   }
